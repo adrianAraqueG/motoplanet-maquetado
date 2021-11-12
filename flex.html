@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .col{
+            width: 48%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+
+        .cont{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            height: 500px;
+        }
+
+        .col-img{
+            width: 50%;
+            
+        }
+        .col-img img{
+            width: 100%;
+            min-width: 480px;
+            height: 500px;
+        }
+
+        .col-text{
+            width: 50%;
+            min-width: 480px;
+            align-content:center ;
+        }
+
+        @media (max-width: 576px){
+            .col{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="col col-text">
+            <h4>Motoexperience</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam at nulla debitis! Alias mollitia consequatur hic nostrum omnis nisi, voluptas rem itaque velit, cupiditate a illum iusto inventore blanditiis.</p>
+        </div>
+        <div class="col col-img">
+            <img src="img/banner/banner-ktm-1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
